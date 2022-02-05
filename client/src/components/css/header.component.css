@@ -1,0 +1,21 @@
+/* css header */
+.content ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.content ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+.content ul li a {
+  color: red;
+}
+
+.menu {
+  background-color: rgba(223, 217, 217, 0.301);
+}
+/*# sourceMappingURL=header.component.css.map */

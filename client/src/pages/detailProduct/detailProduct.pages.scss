@@ -1,0 +1,131 @@
+.hinhDemo,
+.moTa {
+  border: 0 solid;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  padding: 20px;
+  margin: 0px 0px 30px 20px;
+}
+.hinhDemo {
+  background-image: linear-gradient(
+    90deg,
+    rgb(220, 132, 236),
+    rgb(255, 157, 0)
+  );
+}
+
+.detailPro {
+  justify-content: space-evenly;
+}
+
+.imgSlick {
+  max-width: 400px !important;
+  height: 500px !important;
+  object-fit: contain;
+  margin: auto;
+  display: block !important;
+}
+.slick-dots {
+  display: flex !important;
+  justify-content: space-evenly;
+  position: relative;
+  li:hover {
+    background: rgba(238, 238, 238, 0);
+    box-shadow: 0 5px 8px 2px lightblue;
+    transition: all 0.3s;
+  }
+  li {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+    button {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+    }
+    button::before {
+      display: none;
+    }
+  }
+  .slick-active {
+    background: rgba(238, 238, 238, 0);
+    box-shadow: 0 7px 8px 2px lightblue;
+    transition: all 0.3s;
+  }
+}
+.slick-dots li.slick-active button:before {
+  display: none;
+}
+.slick-arrow.slick-next {
+  display: block;
+  background: url(https://tix.vn/app/assets/img/icons/next-session.png);
+  height: 100px;
+  width: 50px;
+  top: 42%;
+  right: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slick-next:before {
+  display: none;
+}
+.slick-arrow.slick-prev {
+  display: block;
+  background: url(https://tix.vn/app/assets/img/icons/back-session.png);
+  height: 100px;
+  width: 50px;
+  top: 42%;
+  left: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.slick-prev:before {
+  display: none;
+}
+
+.gia {
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(192, 188, 188, 0.726);
+  margin: 20px 0;
+}
+.quantityPro {
+  b {
+    margin-right: 30px;
+  }
+  input {
+    width: 50px;
+    text-align: center;
+    outline: none;
+  }
+  .minusIcon,
+  .addIcon {
+    cursor: pointer;
+  }
+  .noticeQuantity {
+    margin-left: 1px;
+  }
+}
+.detailInfo {
+  margin-top: 20px;
+}
+.headerInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes nhapnho {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

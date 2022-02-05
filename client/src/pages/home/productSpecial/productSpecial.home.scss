@@ -1,0 +1,13 @@
+.itemImg {
+  height: 100px;
+//   width: 40%;
+}
+.listSpecial.row{
+   flex-wrap: nowrap;
+   overflow-x:scroll
+}
+.itemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

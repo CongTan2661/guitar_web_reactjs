@@ -1,0 +1,123 @@
+/* css header */
+.content ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.content ul li {
+  list-style: none;
+  padding: 20px;
+}
+.content ul li a {
+  color: red;
+  font-size: 1.5rem;
+}
+.menu {
+  background-color: rgba(245, 238, 238, 0.699);
+  transition: 0.2s;
+  box-shadow: yellow;
+  box-shadow: 0 0 15px rgba(22, 22, 22, 0.459);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.menu:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.logo {
+  padding-left: 30px !important;
+  padding-top: 5px;
+}
+
+.infoUser:hover .selectItem {
+  display: block;
+}
+
+.infoUser {
+  position: relative;
+  height: 100%;
+
+  .titleUser {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.294);
+  }
+  .selectItem {
+    background-color: white;
+    display: none;
+    position: absolute;
+    border: 1px solid transparent;
+    cursor: pointer;
+    right: 20%;
+    top: 30%;
+    transform: translateY(25%);
+    padding: 10px 10px;
+    // margin-top: 10px;
+    border-radius: 5px;
+    .account {
+      white-space: nowrap;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      transition: all 0.2s;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.055);
+      .iconAccount {
+        transition: all 0.5s;
+      }
+    }
+    .account:hover .iconAccount {
+      color: green;
+      transition: all 0.3s;
+    }
+    .infoCart {
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      transition: all 0.2s;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.055);
+      .iconCart {
+        transition: all 0.5s;
+      }
+    }
+    .infoCart:hover .iconCart {
+      color: red;
+      transition: all 0.3s;
+    }
+    .logOut {
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      transition: all 0.2s;
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.055);
+      .iconLogout {
+        transition: all 0.5s;
+      }
+    }
+    .logOut:hover .iconLogout {
+      color: blue;
+      transition: all 0.3s;
+    }
+    .account:hover,
+    .infoCart:hover,
+    .logOut:hover {
+      box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.253);
+      transition: all 0.2s;
+    }
+  }
+}
+

@@ -1,0 +1,28 @@
+.formSignUp {
+  width: 550px;
+  margin: auto;
+  padding-top: 30px;
+  border: 3px solid transparent;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: linear-gradient(rgb(238, 127, 0), rgb(214, 235, 100)) padding-box,
+    linear-gradient(to right, red, rgb(212, 0, 255)) border-box;
+}
+.noError {
+  display: none;
+}
+.error,
+.errorNull,
+.errorLength {
+  color: red;
+  background-color: #f5deb39e;
+  padding: 7px;
+  margin-top: 5px;
+}
+.bgSignUp {
+  background-image: url("https://cdn.pixabay.com/photo/2019/07/18/01/44/electric-guitar-4345340__340.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
