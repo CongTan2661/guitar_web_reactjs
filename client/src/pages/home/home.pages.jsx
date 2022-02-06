@@ -3,6 +3,7 @@ import CarouselHome from "./carouselHome/carousel.home";
 import { connect } from "react-redux";
 import { getProductListAction } from "../../store/actions/product.action";
 import AllProduct from "./allProduct/allProduct.pages";
+import FeedBack from "./feedback/feedback.home";
 class Home extends Component {
   loadingPage = () => {
     return (
@@ -24,8 +25,11 @@ class Home extends Component {
           <div id="home">
             <CarouselHome />
           </div>
-          <div className="sanPhamNoiBac">
+          <div>
             <AllProduct listProduct={this.props.productList} />
+          </div>
+          <div className="feedback">
+            <FeedBack/>
           </div>
         </div>
       </>

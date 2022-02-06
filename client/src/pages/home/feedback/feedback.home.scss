@@ -1,0 +1,36 @@
+.contentFb {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin-right: 20px;
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.avatar::after {
+  content: "";
+  display: block;
+  color: #3dc53d;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  border: 2px solid;
+  border-radius: 50%;
+  background: #3dc53d;
+}
+.cmt {
+  padding: 10px 25px;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 250px;
+}
